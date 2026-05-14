@@ -1,0 +1,139 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+    color: #edf2ff;
+    background: #080b12;
+}
+
+.container {
+    position: fixed;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+svg,
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-container {
+    width: 270px;
+    color: #edf2ff;
+}
+
+svg {
+    width: 1000px;
+    pointer-events: none;
+}
+
+.form-container h1 {
+    margin: 0 0 4px;
+    font-size: 28px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.form-container .form-row {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form-container .form-row input {
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    padding: 5px;
+    outline: none;
+    color: #edf2ff;
+    background-color: #111827;
+    border: 2px solid #2c3444;
+    border-radius: 4px;
+}
+
+.form-container .form-row input.valid {
+    border-color: #5eead4;
+    box-shadow: 0 0 0 3px rgba(94, 234, 212, .12);
+}
+
+.form-container .form-row input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    padding: 0;
+    accent-color: #5eead4;
+    border: 2px solid #2c3444;
+}
+
+.form-container .form-row input[type="submit"] {
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    color: #080b12;
+    background-color: #5eead4;
+    font-weight: 700;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #7dd3fc;
+}
+
+.form-container label,
+.form-container input,
+.form-container input::placeholder {
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.form-container input::placeholder {
+    color: #8b9ab4;
+}
+
+svg {
+    stroke-width: 1.2px;
+    stroke: #dce7ff;
+    fill: none
+}
+
+svg [fill="#000000"],
+svg [fill="#000"],
+svg [fill="#231f20"] {
+    fill: #dce7ff;
+}
+
+svg [fill="#fff"],
+svg [fill="#ffffff"],
+svg [fill="white"] {
+    fill: #111827;
+}
+
+svg [fill="#cccccc"] {
+    fill: #5b6474;
+}
+
+svg [stroke="#ccc"] {
+    stroke: #4a5568;
+}
+
+svg [stroke="#fff"] {
+    stroke: #dce7ff;
+}
+
+.creator {
+    position: fixed;
+    right: 18px;
+    bottom: 14px;
+    margin: 0;
+    font-size: 14px;
+    color: #9fb1d1;
+}
